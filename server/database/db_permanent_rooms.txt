@@ -1,0 +1,1 @@
+[{"name":"General","id":"3ea9252d-552c-4d62-b2fe-2cd78375de95","status":"permanent","owners":[{"username":"@ChatBot_1","id":"rV9PNA3J4x61QhHHAAAB"}],"chatLog":[],"currentStatus":"active"}]{"name":"Off-Topic","id":"36e3c1f3-cf1a-4b53-9161-e6d7ebb7df80","status":"permanent","owners":[{"username":"@ChatBot_2","id":"-B7y4cyQEs6rEl3UAAAA"}],"chatLog":[],"currentStatus":"active"}]
