@@ -136,7 +136,7 @@ export default function App() {
       username: user,
       message: userInput.new_message
     }
-    socket.emit("new_message", {room: currentRoom, data: message});
+    socket.emit('new_message', {room: currentRoom, data: message});
     updateUserInput({[name]: ""});
     updateData(data => [...data, message]);
   }
@@ -264,7 +264,7 @@ export default function App() {
           <input type="text" ref={messageInput} name="new_message" onChange={onChange} value={userInput.new_message} />
           <button type="submit">Send Message To {currentRoom}</button>
         </form>
-        <button onClick={leaveRoomCheck}>Leave current room</button><button onClick={emptyDB}>Empty DATABASE</button>
+        <button onClick={leaveRoomCheck}>Leave current room</button><button onClick={emptyDB}>Empty DATABASE</button>        
         {deleteConfirmation && <Popup currentRoom={currentRoom} updateDeleteConfirmation={updateDeleteConfirmation} deleteRoom={deleteRoom} />}
         <form onSubmit={createNewRoom}>
           <input type="text" name="createRoom" onChange={onChange} value={userInput.createRoom} />
@@ -291,10 +291,6 @@ export default function App() {
           Premium rooms will also be saved and can thus survive server rebooteths.
           Only an admin or the creator/owner can delete this room.
           Purchase a premium account by first creating a basic user.
-          </p>
-          <p>
-          The chatbot has a good knowledge of the time, general questions, the weather and other greetings.
-          Mention the chatbot's name and see what happens, but for the love of God, do not under ANY circumstances yell at it!.
           </p>
           <p>
           Admins can login by creating a user called Admin_1 and Admin_2.
